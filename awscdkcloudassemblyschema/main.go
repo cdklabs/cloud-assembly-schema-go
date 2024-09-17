@@ -87,10 +87,6 @@ func init() {
 		"@aws-cdk/cloud-assembly-schema.ContainerImageAssetMetadataEntry",
 		reflect.TypeOf((*ContainerImageAssetMetadataEntry)(nil)).Elem(),
 	)
-	_jsii_.RegisterStruct(
-		"@aws-cdk/cloud-assembly-schema.ContextLookupRoleOptions",
-		reflect.TypeOf((*ContextLookupRoleOptions)(nil)).Elem(),
-	)
 	_jsii_.RegisterEnum(
 		"@aws-cdk/cloud-assembly-schema.ContextProvider",
 		reflect.TypeOf((*ContextProvider)(nil)).Elem(),
