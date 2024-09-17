@@ -5,6 +5,15 @@ package awscdkcloudassemblyschema
 type AwsCloudFormationStackProperties struct {
 	// A file relative to the assembly root which contains the CloudFormation template for this stack.
 	TemplateFile *string `field:"required" json:"templateFile" yaml:"templateFile"`
+	// Additional options to pass to STS when assuming the role.
+	//
+	// - `RoleArn` should not be used. Use the dedicated `assumeRoleArn` property instead.
+	// - `ExternalId` should not be used. Use the dedicated `assumeRoleExternalId` instead.
+	// See: https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/STS.html#assumeRole-property
+	//
+	// Default: - No additional options.
+	//
+	AssumeRoleAdditionalOptions *map[string]interface{} `field:"optional" json:"assumeRoleAdditionalOptions" yaml:"assumeRoleAdditionalOptions"`
 	// The role that needs to be assumed to deploy the stack.
 	// Default: - No role is assumed (current credentials are used).
 	//
