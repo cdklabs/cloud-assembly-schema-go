@@ -33,10 +33,6 @@ type AwsCloudFormationStackProperties struct {
 	// Default: - No role is assumed (current credentials are used).
 	//
 	LookupRole *BootstrapRole `field:"optional" json:"lookupRole" yaml:"lookupRole"`
-	// SNS Notification ARNs that should receive CloudFormation Stack Events.
-	// Default: - No notification arns.
-	//
-	NotificationArns *[]*string `field:"optional" json:"notificationArns" yaml:"notificationArns"`
 	// Values for CloudFormation stack parameters that should be passed when the stack is deployed.
 	// Default: - No parameters.
 	//
