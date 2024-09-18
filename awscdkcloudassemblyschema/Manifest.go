@@ -2,7 +2,7 @@ package awscdkcloudassemblyschema
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema/v36/jsii"
+	_init_ "github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema/v37/jsii"
 )
 
 // Protocol utility class.
