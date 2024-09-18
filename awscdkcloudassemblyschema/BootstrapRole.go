@@ -5,6 +5,15 @@ package awscdkcloudassemblyschema
 type BootstrapRole struct {
 	// The ARN of the IAM role created as part of bootrapping e.g. lookupRoleArn.
 	Arn *string `field:"required" json:"arn" yaml:"arn"`
+	// Additional options to pass to STS when assuming the role.
+	//
+	// - `RoleArn` should not be used. Use the dedicated `arn` property instead.
+	// - `ExternalId` should not be used. Use the dedicated `assumeRoleExternalId` instead.
+	// See: https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/STS.html#assumeRole-property
+	//
+	// Default: - No additional options.
+	//
+	AssumeRoleAdditionalOptions *map[string]interface{} `field:"optional" json:"assumeRoleAdditionalOptions" yaml:"assumeRoleAdditionalOptions"`
 	// External ID to use when assuming the bootstrap role.
 	// Default: - No external ID.
 	//
