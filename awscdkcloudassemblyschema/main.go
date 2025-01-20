@@ -180,6 +180,16 @@ func init() {
 		"@aws-cdk/cloud-assembly-schema.HostedZoneContextQuery",
 		reflect.TypeOf((*HostedZoneContextQuery)(nil)).Elem(),
 	)
+	_jsii_.RegisterInterface(
+		"@aws-cdk/cloud-assembly-schema.ICloudAssembly",
+		reflect.TypeOf((*ICloudAssembly)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "directory", GoGetter: "Directory"},
+		},
+		func() interface{} {
+			return &jsiiProxy_ICloudAssembly{}
+		},
+	)
 	_jsii_.RegisterStruct(
 		"@aws-cdk/cloud-assembly-schema.IntegManifest",
 		reflect.TypeOf((*IntegManifest)(nil)).Elem(),
