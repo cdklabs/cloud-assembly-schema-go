@@ -25,6 +25,8 @@ const (
 	ContextProvider_SECURITY_GROUP_PROVIDER ContextProvider = "SECURITY_GROUP_PROVIDER"
 	// KMS Key Provider.
 	ContextProvider_KEY_PROVIDER ContextProvider = "KEY_PROVIDER"
+	// CCAPI Provider.
+	ContextProvider_CC_API_PROVIDER ContextProvider = "CC_API_PROVIDER"
 	// A plugin provider (the actual plugin name will be in the properties).
 	ContextProvider_PLUGIN ContextProvider = "PLUGIN"
 )

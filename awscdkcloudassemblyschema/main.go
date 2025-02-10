@@ -72,6 +72,10 @@ func init() {
 		reflect.TypeOf((*BootstrapRole)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
+		"@aws-cdk/cloud-assembly-schema.CcApiContextQuery",
+		reflect.TypeOf((*CcApiContextQuery)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
 		"@aws-cdk/cloud-assembly-schema.CdkCommand",
 		reflect.TypeOf((*CdkCommand)(nil)).Elem(),
 	)
@@ -105,6 +109,7 @@ func init() {
 			"LOAD_BALANCER_LISTENER_PROVIDER": ContextProvider_LOAD_BALANCER_LISTENER_PROVIDER,
 			"SECURITY_GROUP_PROVIDER": ContextProvider_SECURITY_GROUP_PROVIDER,
 			"KEY_PROVIDER": ContextProvider_KEY_PROVIDER,
+			"CC_API_PROVIDER": ContextProvider_CC_API_PROVIDER,
 			"PLUGIN": ContextProvider_PLUGIN,
 		},
 	)
