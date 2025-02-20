@@ -1,4 +1,4 @@
-// Cloud Assembly Schema
+// Schema for the protocol between CDK framework and CDK CLI
 package awscdkcloudassemblyschema
 
 import (
