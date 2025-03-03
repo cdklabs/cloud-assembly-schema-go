@@ -146,7 +146,7 @@ type DeployOptions struct {
 	//
 	Parameters *map[string]*string `field:"optional" json:"parameters" yaml:"parameters"`
 	// What kind of security changes require approval.
-	// Default: RequireApproval.Never
+	// Default: RequireApproval.NEVER
 	//
 	RequireApproval RequireApproval `field:"optional" json:"requireApproval" yaml:"requireApproval"`
 	// Reuse the assets with the given asset IDs.
