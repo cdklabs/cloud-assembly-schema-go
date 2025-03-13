@@ -14,6 +14,22 @@ type jsiiProxy_Manifest struct {
 	_ byte // padding
 }
 
+// Return the CLI version that supports this Cloud Assembly Schema version.
+func Manifest_CliVersion() *string {
+	_init_.Initialize()
+
+	var returns *string
+
+	_jsii_.StaticInvoke(
+		"@aws-cdk/cloud-assembly-schema.Manifest",
+		"cliVersion",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 // Deprecated.
 // Deprecated: use `loadAssemblyManifest()`.
 func Manifest_Load(filePath *string) *AssemblyManifest {
