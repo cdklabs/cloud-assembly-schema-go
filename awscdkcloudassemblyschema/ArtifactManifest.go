@@ -9,9 +9,12 @@ type ArtifactManifest struct {
 	// Default: - no dependencies.
 	//
 	Dependencies *[]*string `field:"optional" json:"dependencies" yaml:"dependencies"`
-	// A string that represents this artifact.
+	// A string that can be shown to a user to uniquely identify this artifact inside a cloud assembly tree.
 	//
-	// Should only be used in user interfaces.
+	// Is used by the CLI to present a list of stacks to the user in a way that
+	// makes sense to them. Even though the property name "display name" doesn't
+	// imply it, this field is used to select stacks as well, so all stacks should
+	// have a unique display name.
 	// Default: - no display name.
 	//
 	DisplayName *string `field:"optional" json:"displayName" yaml:"displayName"`
