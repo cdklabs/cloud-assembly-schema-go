@@ -17,5 +17,7 @@ const (
 	ArtifactMetadataEntryType_LOGICAL_ID ArtifactMetadataEntryType = "LOGICAL_ID"
 	// Represents tags of a stack.
 	ArtifactMetadataEntryType_STACK_TAGS ArtifactMetadataEntryType = "STACK_TAGS"
+	// Whether the resource should be excluded during refactoring.
+	ArtifactMetadataEntryType_DO_NOT_REFACTOR ArtifactMetadataEntryType = "DO_NOT_REFACTOR"
 )
 

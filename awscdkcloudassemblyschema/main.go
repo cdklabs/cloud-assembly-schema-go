@@ -26,6 +26,7 @@ func init() {
 			"ERROR": ArtifactMetadataEntryType_ERROR,
 			"LOGICAL_ID": ArtifactMetadataEntryType_LOGICAL_ID,
 			"STACK_TAGS": ArtifactMetadataEntryType_STACK_TAGS,
+			"DO_NOT_REFACTOR": ArtifactMetadataEntryType_DO_NOT_REFACTOR,
 		},
 	)
 	_jsii_.RegisterEnum(
