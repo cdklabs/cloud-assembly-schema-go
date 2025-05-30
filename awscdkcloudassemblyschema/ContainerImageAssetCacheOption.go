@@ -8,7 +8,7 @@ type ContainerImageAssetCacheOption struct {
 	// Refer to https://docs.docker.com/build/cache/backends/ for full list of backends.
 	//
 	// Example:
-	//   'registry'
+	//   "registry"
 	//
 	// Default: - unspecified.
 	//
@@ -18,12 +18,13 @@ type ContainerImageAssetCacheOption struct {
 	// Refer to https://docs.docker.com/build/cache/backends/ for cache backend configuration.
 	//
 	// Example:
-	//   declare const branch: string;
+	//   var branch string
 	//
-	//   const params = {
-	//     ref: `12345678.dkr.ecr.us-west-2.amazonaws.com/cache:${branch}`,
-	//     mode: "max",
-	//   };
+	//
+	//   params := map[string]interface{}{
+	//   	"ref": fmt.Sprintf("12345678.dkr.ecr.us-west-2.amazonaws.com/cache:%v", branch),
+	//   	"mode": jsii.String("max"),
+	//   }
 	//
 	// Default: {} No options provided.
 	//

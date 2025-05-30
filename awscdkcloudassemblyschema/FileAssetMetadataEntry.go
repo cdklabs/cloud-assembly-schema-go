@@ -4,11 +4,11 @@ package awscdkcloudassemblyschema
 // Metadata Entry spec for files.
 //
 // Example:
-//   const entry = {
-//     packaging: 'file',
-//     s3BucketParameter: 'bucket-parameter',
-//     s3KeyParamenter: 'key-parameter',
-//     artifactHashParameter: 'hash-parameter',
+//   entry := map[string]*string{
+//   	"packaging": jsii.String("file"),
+//   	"s3BucketParameter": jsii.String("bucket-parameter"),
+//   	"s3KeyParamenter": jsii.String("key-parameter"),
+//   	"artifactHashParameter": jsii.String("hash-parameter"),
 //   }
 //
 type FileAssetMetadataEntry struct {

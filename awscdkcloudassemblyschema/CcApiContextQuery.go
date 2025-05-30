@@ -9,14 +9,18 @@ package awscdkcloudassemblyschema
 // to generate a validly compiling example).
 //
 // Example:
-//   const x: CcApiContextQuery = {
-//     typeName: 'AWS::Some::Type',
-//     expectedMatchCount: 'exactly-one',
-//     propertiesToReturn: ['SomeProp'],
-//     account: '11111111111',
-//     region: 'us-east-1',
-//   };
-//   console.log(x);
+//   import "github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema"
+//
+//
+//   x := &CcApiContextQuery{
+//   	TypeName: jsii.String("AWS::Some::Type"),
+//   	ExpectedMatchCount: jsii.String("exactly-one"),
+//   	PropertiesToReturn: []*string{
+//   		jsii.String("SomeProp"),
+//   	},
+//   	Account: jsii.String("11111111111"),
+//   	Region: jsii.String("us-east-1"),
+//   }
 //
 type CcApiContextQuery struct {
 	// Query account.

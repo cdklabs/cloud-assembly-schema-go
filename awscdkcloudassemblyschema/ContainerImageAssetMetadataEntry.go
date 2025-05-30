@@ -4,10 +4,10 @@ package awscdkcloudassemblyschema
 // Metadata Entry spec for container images.
 //
 // Example:
-//   const entry = {
-//     packaging: 'container-image',
-//     repositoryName: 'repository-name',
-//     imageTag: 'tag',
+//   entry := map[string]*string{
+//   	"packaging": jsii.String("container-image"),
+//   	"repositoryName": jsii.String("repository-name"),
+//   	"imageTag": jsii.String("tag"),
 //   }
 //
 type ContainerImageAssetMetadataEntry struct {
