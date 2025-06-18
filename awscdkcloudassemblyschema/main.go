@@ -38,6 +38,7 @@ func init() {
 			"CDK_TREE": ArtifactType_CDK_TREE,
 			"ASSET_MANIFEST": ArtifactType_ASSET_MANIFEST,
 			"NESTED_CLOUD_ASSEMBLY": ArtifactType_NESTED_CLOUD_ASSEMBLY,
+			"FEATURE_FLAG_REPORT": ArtifactType_FEATURE_FLAG_REPORT,
 		},
 	)
 	_jsii_.RegisterStruct(
@@ -153,6 +154,14 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@aws-cdk/cloud-assembly-schema.EndpointServiceAvailabilityZonesContextQuery",
 		reflect.TypeOf((*EndpointServiceAvailabilityZonesContextQuery)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@aws-cdk/cloud-assembly-schema.FeatureFlag",
+		reflect.TypeOf((*FeatureFlag)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@aws-cdk/cloud-assembly-schema.FeatureFlagReportProperties",
+		reflect.TypeOf((*FeatureFlagReportProperties)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
 		"@aws-cdk/cloud-assembly-schema.FileAsset",

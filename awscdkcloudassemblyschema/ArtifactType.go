@@ -15,5 +15,7 @@ const (
 	ArtifactType_ASSET_MANIFEST ArtifactType = "ASSET_MANIFEST"
 	// Nested Cloud Assembly.
 	ArtifactType_NESTED_CLOUD_ASSEMBLY ArtifactType = "NESTED_CLOUD_ASSEMBLY"
+	// Feature flag report.
+	ArtifactType_FEATURE_FLAG_REPORT ArtifactType = "FEATURE_FLAG_REPORT"
 )
 
