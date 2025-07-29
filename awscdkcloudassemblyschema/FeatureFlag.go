@@ -13,6 +13,10 @@ type FeatureFlag struct {
 	// Default: - No recommended value.
 	//
 	RecommendedValue interface{} `field:"optional" json:"recommendedValue" yaml:"recommendedValue"`
+	// The value of the flag if it is unconfigured.
+	// Default: - No value.
+	//
+	UnconfiguredBehavesLike *map[string]interface{} `field:"optional" json:"unconfiguredBehavesLike" yaml:"unconfiguredBehavesLike"`
 	// The value configured by the user.
 	//
 	// This is the value configured at the root of the tree. Users may also have
