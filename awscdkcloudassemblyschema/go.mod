@@ -1,7 +1,7 @@
 module github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema/v48
 
-go 1.18
+go 1.23
 
 require (
-	github.com/aws/jsii-runtime-go v1.112.0
+	github.com/aws/jsii-runtime-go v1.113.0
 )
