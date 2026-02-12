@@ -1,4 +1,4 @@
-module github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema/v50
+module github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema/v52
 
 go 1.23
 
