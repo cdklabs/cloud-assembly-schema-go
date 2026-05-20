@@ -20,6 +20,10 @@ func validateManifest_LoadIntegManifestParameters(filePath *string) error {
 	return nil
 }
 
+func validateManifest_LoadValidationReportParameters(filePath *string) error {
+	return nil
+}
+
 func validateManifest_SaveParameters(manifest *AssemblyManifest, filePath *string) error {
 	return nil
 }
