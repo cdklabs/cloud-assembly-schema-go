@@ -2,6 +2,27 @@ package awscdkcloudassemblyschema
 
 
 // Query to SSM Parameter Context Provider.
+//
+// Example:
+//   // The code below shows an example of how to instantiate this type.
+//   // The values are placeholders you should change.
+//   import cloud_assembly_schema "github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema"
+//
+//   var assumeRoleAdditionalOptions interface{}
+//
+//   sSMParameterContextQuery := &SSMParameterContextQuery{
+//   	Account: jsii.String("account"),
+//   	ParameterName: jsii.String("parameterName"),
+//   	Region: jsii.String("region"),
+//
+//   	// the properties below are optional
+//   	AssumeRoleAdditionalOptions: map[string]interface{}{
+//   		"assumeRoleAdditionalOptionsKey": assumeRoleAdditionalOptions,
+//   	},
+//   	LookupRoleArn: jsii.String("lookupRoleArn"),
+//   	LookupRoleExternalId: jsii.String("lookupRoleExternalId"),
+//   }
+//
 type SSMParameterContextQuery struct {
 	// Query account.
 	Account *string `field:"required" json:"account" yaml:"account"`

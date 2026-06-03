@@ -2,6 +2,21 @@ package awscdkcloudassemblyschema
 
 
 // Options for configuring the Docker cache backend.
+//
+// Example:
+//   // The code below shows an example of how to instantiate this type.
+//   // The values are placeholders you should change.
+//   import cloud_assembly_schema "github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema"
+//
+//   dockerCacheOption := &DockerCacheOption{
+//   	Type: jsii.String("type"),
+//
+//   	// the properties below are optional
+//   	Params: map[string]*string{
+//   		"paramsKey": jsii.String("params"),
+//   	},
+//   }
+//
 type DockerCacheOption struct {
 	// The type of cache to use.
 	//

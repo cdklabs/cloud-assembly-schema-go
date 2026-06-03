@@ -1,24 +1,25 @@
 package awscdkcloudassemblyschema
 
 
-// A single policy violation found by a validation plugin.
+// A violation that was acknowledged/suppressed and excluded from the active violation set.
 //
 // Example:
 //   import "github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema"
 //
 //
-//   violation := &PolicyViolationJson{
+//   suppressed := &SuppressedViolationJson{
 //   	RuleName: jsii.String("no-public-access"),
 //   	Description: jsii.String("S3 bucket should not allow public access"),
-//   	Severity: jsii.String("error"),
+//   	Severity: jsii.String("warning"),
 //   	ViolatingConstructs: []ViolatingConstructJson{
 //   		&ViolatingConstructJson{
 //   			ConstructPath: jsii.String("MyStack/MyBucket"),
 //   		},
 //   	},
+//   	AcknowledgedId: jsii.String("my-plugin::no-public-access"),
 //   }
 //
-type PolicyViolationJson struct {
+type SuppressedViolationJson struct {
 	// A description of the violation.
 	Description *string `field:"required" json:"description" yaml:"description"`
 	// The name of the rule that was violated.
@@ -37,5 +38,23 @@ type PolicyViolationJson struct {
 	// Default: - no fix provided.
 	//
 	SuggestedFix *string `field:"optional" json:"suggestedFix" yaml:"suggestedFix"`
+	// The acknowledgement ID that caused this violation to be suppressed.
+	//
+	// Format: `<plugin-name>::<rule-name>` (spaces replaced with hyphens).
+	AcknowledgedId *string `field:"required" json:"acknowledgedId" yaml:"acknowledgedId"`
+	// The construct path where the acknowledgement was declared.
+	// Default: - unknown.
+	//
+	AcknowledgedAt *string `field:"optional" json:"acknowledgedAt" yaml:"acknowledgedAt"`
+	// Stack trace showing where the acknowledgement was declared.
+	//
+	// A `\n`-delimited string of stack frames.
+	// Default: - no stack trace.
+	//
+	AcknowledgedStackTrace *string `field:"optional" json:"acknowledgedStackTrace" yaml:"acknowledgedStackTrace"`
+	// The reason given for the acknowledgement, if provided.
+	// Default: - no reason given.
+	//
+	Reason *string `field:"optional" json:"reason" yaml:"reason"`
 }
 

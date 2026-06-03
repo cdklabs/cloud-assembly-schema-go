@@ -2,6 +2,17 @@ package awscdkcloudassemblyschema
 
 
 // Configuration options for the Asset Manifest.
+//
+// Example:
+//   // The code below shows an example of how to instantiate this type.
+//   // The values are placeholders you should change.
+//   import cloud_assembly_schema "github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema"
+//
+//   assetManifestOptions := &AssetManifestOptions{
+//   	BootstrapStackVersionSsmParameter: jsii.String("bootstrapStackVersionSsmParameter"),
+//   	RequiresBootstrapStackVersion: jsii.Number(123),
+//   }
+//
 type AssetManifestOptions struct {
 	// SSM parameter where the bootstrap stack version number can be found.
 	//

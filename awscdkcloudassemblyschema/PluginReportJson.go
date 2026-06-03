@@ -2,6 +2,18 @@ package awscdkcloudassemblyschema
 
 
 // A report from a single validation plugin.
+//
+// Example:
+//   import "github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema"
+//
+//
+//   report := &PluginReportJson{
+//   	PluginName: jsii.String("my-plugin"),
+//   	Conclusion: jsii.String("success"),
+//   	Violations: []PolicyViolationJson{
+//   	},
+//   }
+//
 type PluginReportJson struct {
 	// Whether the plugin's validation passed or failed.
 	Conclusion *string `field:"required" json:"conclusion" yaml:"conclusion"`
@@ -17,5 +29,13 @@ type PluginReportJson struct {
 	// Default: - no version.
 	//
 	PluginVersion *string `field:"optional" json:"pluginVersion" yaml:"pluginVersion"`
+	// Violations that were suppressed via acknowledgement.
+	//
+	// These violations matched an acknowledged rule ID and were excluded
+	// from the active violations list. They are retained for audit
+	// trail and reporting purposes.
+	// Default: - no suppressed violations.
+	//
+	SuppressedViolations *[]*SuppressedViolationJson `field:"optional" json:"suppressedViolations" yaml:"suppressedViolations"`
 }
 

@@ -2,6 +2,20 @@ package awscdkcloudassemblyschema
 
 
 // Artifact properties for the Asset Manifest.
+//
+// Example:
+//   // The code below shows an example of how to instantiate this type.
+//   // The values are placeholders you should change.
+//   import cloud_assembly_schema "github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema"
+//
+//   assetManifestProperties := &AssetManifestProperties{
+//   	File: jsii.String("file"),
+//
+//   	// the properties below are optional
+//   	BootstrapStackVersionSsmParameter: jsii.String("bootstrapStackVersionSsmParameter"),
+//   	RequiresBootstrapStackVersion: jsii.Number(123),
+//   }
+//
 type AssetManifestProperties struct {
 	// SSM parameter where the bootstrap stack version number can be found.
 	//

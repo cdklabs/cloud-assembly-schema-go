@@ -2,6 +2,18 @@ package awscdkcloudassemblyschema
 
 
 // Information about the application's runtime components.
+//
+// Example:
+//   // The code below shows an example of how to instantiate this type.
+//   // The values are placeholders you should change.
+//   import cloud_assembly_schema "github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema"
+//
+//   runtimeInfo := &RuntimeInfo{
+//   	Libraries: map[string]*string{
+//   		"librariesKey": jsii.String("libraries"),
+//   	},
+//   }
+//
 type RuntimeInfo struct {
 	// The list of libraries loaded in the application, associated with their versions.
 	Libraries *map[string]*string `field:"required" json:"libraries" yaml:"libraries"`

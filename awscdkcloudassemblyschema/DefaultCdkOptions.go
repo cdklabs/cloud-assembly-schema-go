@@ -2,6 +2,42 @@ package awscdkcloudassemblyschema
 
 
 // Default CDK CLI options that apply to all commands.
+//
+// Example:
+//   // The code below shows an example of how to instantiate this type.
+//   // The values are placeholders you should change.
+//   import cloud_assembly_schema "github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema"
+//
+//   defaultCdkOptions := &DefaultCdkOptions{
+//   	All: jsii.Boolean(false),
+//   	App: jsii.String("app"),
+//   	AssetMetadata: jsii.Boolean(false),
+//   	CaBundlePath: jsii.String("caBundlePath"),
+//   	Color: jsii.Boolean(false),
+//   	Context: map[string]*string{
+//   		"contextKey": jsii.String("context"),
+//   	},
+//   	Debug: jsii.Boolean(false),
+//   	Ec2Creds: jsii.Boolean(false),
+//   	IgnoreErrors: jsii.Boolean(false),
+//   	Json: jsii.Boolean(false),
+//   	Lookups: jsii.Boolean(false),
+//   	Notices: jsii.Boolean(false),
+//   	Output: jsii.String("output"),
+//   	PathMetadata: jsii.Boolean(false),
+//   	Profile: jsii.String("profile"),
+//   	Proxy: jsii.String("proxy"),
+//   	RoleArn: jsii.String("roleArn"),
+//   	Stacks: []*string{
+//   		jsii.String("stacks"),
+//   	},
+//   	Staging: jsii.Boolean(false),
+//   	Strict: jsii.Boolean(false),
+//   	Trace: jsii.Boolean(false),
+//   	Verbose: jsii.Boolean(false),
+//   	VersionReporting: jsii.Boolean(false),
+//   }
+//
 type DefaultCdkOptions struct {
 	// Deploy all stacks.
 	//

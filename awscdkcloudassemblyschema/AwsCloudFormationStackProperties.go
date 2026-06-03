@@ -2,6 +2,52 @@ package awscdkcloudassemblyschema
 
 
 // Artifact properties for CloudFormation stacks.
+//
+// Example:
+//   // The code below shows an example of how to instantiate this type.
+//   // The values are placeholders you should change.
+//   import cloud_assembly_schema "github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema"
+//
+//   var assumeRoleAdditionalOptions interface{}
+//
+//   awsCloudFormationStackProperties := &AwsCloudFormationStackProperties{
+//   	TemplateFile: jsii.String("templateFile"),
+//
+//   	// the properties below are optional
+//   	AssumeRoleAdditionalOptions: map[string]interface{}{
+//   		"assumeRoleAdditionalOptionsKey": assumeRoleAdditionalOptions,
+//   	},
+//   	AssumeRoleArn: jsii.String("assumeRoleArn"),
+//   	AssumeRoleExternalId: jsii.String("assumeRoleExternalId"),
+//   	BootstrapStackVersionSsmParameter: jsii.String("bootstrapStackVersionSsmParameter"),
+//   	CloudFormationExecutionRoleArn: jsii.String("cloudFormationExecutionRoleArn"),
+//   	LookupRole: &BootstrapRole{
+//   		Arn: jsii.String("arn"),
+//
+//   		// the properties below are optional
+//   		AssumeRoleAdditionalOptions: map[string]interface{}{
+//   			"assumeRoleAdditionalOptionsKey": assumeRoleAdditionalOptions,
+//   		},
+//   		AssumeRoleExternalId: jsii.String("assumeRoleExternalId"),
+//   		BootstrapStackVersionSsmParameter: jsii.String("bootstrapStackVersionSsmParameter"),
+//   		RequiresBootstrapStackVersion: jsii.Number(123),
+//   	},
+//   	NotificationArns: []*string{
+//   		jsii.String("notificationArns"),
+//   	},
+//   	Parameters: map[string]*string{
+//   		"parametersKey": jsii.String("parameters"),
+//   	},
+//   	RequiresBootstrapStackVersion: jsii.Number(123),
+//   	StackName: jsii.String("stackName"),
+//   	StackTemplateAssetObjectUrl: jsii.String("stackTemplateAssetObjectUrl"),
+//   	Tags: map[string]*string{
+//   		"tagsKey": jsii.String("tags"),
+//   	},
+//   	TerminationProtection: jsii.Boolean(false),
+//   	ValidateOnSynth: jsii.Boolean(false),
+//   }
+//
 type AwsCloudFormationStackProperties struct {
 	// A file relative to the assembly root which contains the CloudFormation template for this stack.
 	TemplateFile *string `field:"required" json:"templateFile" yaml:"templateFile"`

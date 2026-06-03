@@ -2,6 +2,17 @@ package awscdkcloudassemblyschema
 
 
 // Metadata Entry spec for stack tag.
+//
+// Example:
+//   // The code below shows an example of how to instantiate this type.
+//   // The values are placeholders you should change.
+//   import cloud_assembly_schema "github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema"
+//
+//   tag := &Tag{
+//   	Key: jsii.String("key"),
+//   	Value: jsii.String("value"),
+//   }
+//
 type Tag struct {
 	// Tag key.
 	//

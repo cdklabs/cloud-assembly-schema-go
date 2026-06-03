@@ -2,6 +2,27 @@ package awscdkcloudassemblyschema
 
 
 // Where in S3 a file asset needs to be published.
+//
+// Example:
+//   // The code below shows an example of how to instantiate this type.
+//   // The values are placeholders you should change.
+//   import cloud_assembly_schema "github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema"
+//
+//   var assumeRoleAdditionalOptions interface{}
+//
+//   fileDestination := &FileDestination{
+//   	BucketName: jsii.String("bucketName"),
+//   	ObjectKey: jsii.String("objectKey"),
+//
+//   	// the properties below are optional
+//   	AssumeRoleAdditionalOptions: map[string]interface{}{
+//   		"assumeRoleAdditionalOptionsKey": assumeRoleAdditionalOptions,
+//   	},
+//   	AssumeRoleArn: jsii.String("assumeRoleArn"),
+//   	AssumeRoleExternalId: jsii.String("assumeRoleExternalId"),
+//   	Region: jsii.String("region"),
+//   }
+//
 type FileDestination struct {
 	// Additional options to pass to STS when assuming the role.
 	//

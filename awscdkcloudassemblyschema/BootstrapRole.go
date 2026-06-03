@@ -2,6 +2,26 @@ package awscdkcloudassemblyschema
 
 
 // Information needed to access an IAM role created as part of the bootstrap process.
+//
+// Example:
+//   // The code below shows an example of how to instantiate this type.
+//   // The values are placeholders you should change.
+//   import cloud_assembly_schema "github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema"
+//
+//   var assumeRoleAdditionalOptions interface{}
+//
+//   bootstrapRole := &BootstrapRole{
+//   	Arn: jsii.String("arn"),
+//
+//   	// the properties below are optional
+//   	AssumeRoleAdditionalOptions: map[string]interface{}{
+//   		"assumeRoleAdditionalOptionsKey": assumeRoleAdditionalOptions,
+//   	},
+//   	AssumeRoleExternalId: jsii.String("assumeRoleExternalId"),
+//   	BootstrapStackVersionSsmParameter: jsii.String("bootstrapStackVersionSsmParameter"),
+//   	RequiresBootstrapStackVersion: jsii.Number(123),
+//   }
+//
 type BootstrapRole struct {
 	// The ARN of the IAM role created as part of bootrapping e.g. lookupRoleArn.
 	Arn *string `field:"required" json:"arn" yaml:"arn"`

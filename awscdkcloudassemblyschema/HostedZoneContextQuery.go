@@ -2,6 +2,29 @@ package awscdkcloudassemblyschema
 
 
 // Query to hosted zone context provider.
+//
+// Example:
+//   // The code below shows an example of how to instantiate this type.
+//   // The values are placeholders you should change.
+//   import cloud_assembly_schema "github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema"
+//
+//   var assumeRoleAdditionalOptions interface{}
+//
+//   hostedZoneContextQuery := &HostedZoneContextQuery{
+//   	Account: jsii.String("account"),
+//   	DomainName: jsii.String("domainName"),
+//   	Region: jsii.String("region"),
+//
+//   	// the properties below are optional
+//   	AssumeRoleAdditionalOptions: map[string]interface{}{
+//   		"assumeRoleAdditionalOptionsKey": assumeRoleAdditionalOptions,
+//   	},
+//   	LookupRoleArn: jsii.String("lookupRoleArn"),
+//   	LookupRoleExternalId: jsii.String("lookupRoleExternalId"),
+//   	PrivateZone: jsii.Boolean(false),
+//   	VpcId: jsii.String("vpcId"),
+//   }
+//
 type HostedZoneContextQuery struct {
 	// Query account.
 	Account *string `field:"required" json:"account" yaml:"account"`

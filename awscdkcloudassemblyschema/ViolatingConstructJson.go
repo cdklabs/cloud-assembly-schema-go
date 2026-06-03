@@ -2,6 +2,32 @@ package awscdkcloudassemblyschema
 
 
 // A construct that violated a policy rule.
+//
+// Example:
+//   // The code below shows an example of how to instantiate this type.
+//   // The values are placeholders you should change.
+//   import cloud_assembly_schema "github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema"
+//
+//   violatingConstructJson := &ViolatingConstructJson{
+//   	ConstructPath: jsii.String("constructPath"),
+//
+//   	// the properties below are optional
+//   	CloudFormationResource: &CloudFormationResourceJson{
+//   		LogicalId: jsii.String("logicalId"),
+//   		TemplatePath: jsii.String("templatePath"),
+//
+//   		// the properties below are optional
+//   		PropertyPaths: []*string{
+//   			jsii.String("propertyPaths"),
+//   		},
+//   	},
+//   	ConstructFqn: jsii.String("constructFqn"),
+//   	LibraryVersion: jsii.String("libraryVersion"),
+//   	StackTraces: []*string{
+//   		jsii.String("stackTraces"),
+//   	},
+//   }
+//
 type ViolatingConstructJson struct {
 	// The construct path as defined in the application.
 	// Default: - no construct path.

@@ -2,6 +2,34 @@ package awscdkcloudassemblyschema
 
 
 // Query to AMI context provider.
+//
+// Example:
+//   // The code below shows an example of how to instantiate this type.
+//   // The values are placeholders you should change.
+//   import cloud_assembly_schema "github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema"
+//
+//   var assumeRoleAdditionalOptions interface{}
+//
+//   amiContextQuery := &AmiContextQuery{
+//   	Account: jsii.String("account"),
+//   	Filters: map[string][]*string{
+//   		"filtersKey": []*string{
+//   			jsii.String("filters"),
+//   		},
+//   	},
+//   	Region: jsii.String("region"),
+//
+//   	// the properties below are optional
+//   	AssumeRoleAdditionalOptions: map[string]interface{}{
+//   		"assumeRoleAdditionalOptionsKey": assumeRoleAdditionalOptions,
+//   	},
+//   	LookupRoleArn: jsii.String("lookupRoleArn"),
+//   	LookupRoleExternalId: jsii.String("lookupRoleExternalId"),
+//   	Owners: []*string{
+//   		jsii.String("owners"),
+//   	},
+//   }
+//
 type AmiContextQuery struct {
 	// Query account.
 	Account *string `field:"required" json:"account" yaml:"account"`

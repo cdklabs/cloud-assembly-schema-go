@@ -2,6 +2,22 @@ package awscdkcloudassemblyschema
 
 
 // A metadata entry in a cloud assembly artifact.
+//
+// Example:
+//   // The code below shows an example of how to instantiate this type.
+//   // The values are placeholders you should change.
+//   import cloud_assembly_schema "github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema"
+//
+//   metadataEntry := &MetadataEntry{
+//   	Type: jsii.String("type"),
+//
+//   	// the properties below are optional
+//   	Data: jsii.String("data"),
+//   	Trace: []*string{
+//   		jsii.String("trace"),
+//   	},
+//   }
+//
 type MetadataEntry struct {
 	// The type of the metadata entry.
 	Type *string `field:"required" json:"type" yaml:"type"`

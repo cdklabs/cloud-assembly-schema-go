@@ -2,6 +2,27 @@ package awscdkcloudassemblyschema
 
 
 // Commands to run at predefined points during the integration test workflow.
+//
+// Example:
+//   // The code below shows an example of how to instantiate this type.
+//   // The values are placeholders you should change.
+//   import cloud_assembly_schema "github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema"
+//
+//   hooks := &Hooks{
+//   	PostDeploy: []*string{
+//   		jsii.String("postDeploy"),
+//   	},
+//   	PostDestroy: []*string{
+//   		jsii.String("postDestroy"),
+//   	},
+//   	PreDeploy: []*string{
+//   		jsii.String("preDeploy"),
+//   	},
+//   	PreDestroy: []*string{
+//   		jsii.String("preDestroy"),
+//   	},
+//   }
+//
 type Hooks struct {
 	// Commands to run prior after deploying the cdk stacks in the integration test.
 	// Default: - no commands.

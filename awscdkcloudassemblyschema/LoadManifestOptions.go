@@ -2,6 +2,19 @@ package awscdkcloudassemblyschema
 
 
 // Options for the loadManifest operation.
+//
+// Example:
+//   // The code below shows an example of how to instantiate this type.
+//   // The values are placeholders you should change.
+//   import cloud_assembly_schema "github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema"
+//
+//   loadManifestOptions := &LoadManifestOptions{
+//   	SkipEnumCheck: jsii.Boolean(false),
+//   	SkipVersionCheck: jsii.Boolean(false),
+//   	TopoSort: jsii.Boolean(false),
+//   	ValidateSchema: jsii.Boolean(false),
+//   }
+//
 type LoadManifestOptions struct {
 	// Skip enum checks.
 	//

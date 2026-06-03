@@ -2,6 +2,23 @@ package awscdkcloudassemblyschema
 
 
 // Destination for assets that need to be uploaded to AWS.
+//
+// Example:
+//   // The code below shows an example of how to instantiate this type.
+//   // The values are placeholders you should change.
+//   import cloud_assembly_schema "github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema"
+//
+//   var assumeRoleAdditionalOptions interface{}
+//
+//   awsDestination := &AwsDestination{
+//   	AssumeRoleAdditionalOptions: map[string]interface{}{
+//   		"assumeRoleAdditionalOptionsKey": assumeRoleAdditionalOptions,
+//   	},
+//   	AssumeRoleArn: jsii.String("assumeRoleArn"),
+//   	AssumeRoleExternalId: jsii.String("assumeRoleExternalId"),
+//   	Region: jsii.String("region"),
+//   }
+//
 type AwsDestination struct {
 	// Additional options to pass to STS when assuming the role.
 	//

@@ -2,6 +2,62 @@ package awscdkcloudassemblyschema
 
 
 // Options to use with cdk deploy.
+//
+// Example:
+//   // The code below shows an example of how to instantiate this type.
+//   // The values are placeholders you should change.
+//   import cloud_assembly_schema "github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema"
+//
+//   deployOptions := &DeployOptions{
+//   	All: jsii.Boolean(false),
+//   	App: jsii.String("app"),
+//   	AssetMetadata: jsii.Boolean(false),
+//   	CaBundlePath: jsii.String("caBundlePath"),
+//   	ChangeSetName: jsii.String("changeSetName"),
+//   	Ci: jsii.Boolean(false),
+//   	Color: jsii.Boolean(false),
+//   	Concurrency: jsii.Number(123),
+//   	Context: map[string]*string{
+//   		"contextKey": jsii.String("context"),
+//   	},
+//   	Debug: jsii.Boolean(false),
+//   	Ec2Creds: jsii.Boolean(false),
+//   	Exclusively: jsii.Boolean(false),
+//   	Execute: jsii.Boolean(false),
+//   	Force: jsii.Boolean(false),
+//   	IgnoreErrors: jsii.Boolean(false),
+//   	Json: jsii.Boolean(false),
+//   	Lookups: jsii.Boolean(false),
+//   	Notices: jsii.Boolean(false),
+//   	NotificationArns: []*string{
+//   		jsii.String("notificationArns"),
+//   	},
+//   	Output: jsii.String("output"),
+//   	OutputsFile: jsii.String("outputsFile"),
+//   	Parameters: map[string]*string{
+//   		"parametersKey": jsii.String("parameters"),
+//   	},
+//   	PathMetadata: jsii.Boolean(false),
+//   	Profile: jsii.String("profile"),
+//   	Proxy: jsii.String("proxy"),
+//   	RequireApproval: cloud_assembly_schema.RequireApproval_NEVER,
+//   	ReuseAssets: []*string{
+//   		jsii.String("reuseAssets"),
+//   	},
+//   	RoleArn: jsii.String("roleArn"),
+//   	Rollback: jsii.Boolean(false),
+//   	Stacks: []*string{
+//   		jsii.String("stacks"),
+//   	},
+//   	Staging: jsii.Boolean(false),
+//   	Strict: jsii.Boolean(false),
+//   	ToolkitStackName: jsii.String("toolkitStackName"),
+//   	Trace: jsii.Boolean(false),
+//   	UsePreviousParameters: jsii.Boolean(false),
+//   	Verbose: jsii.Boolean(false),
+//   	VersionReporting: jsii.Boolean(false),
+//   }
+//
 type DeployOptions struct {
 	// Deploy all stacks.
 	//

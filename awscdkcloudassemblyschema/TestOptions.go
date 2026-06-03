@@ -2,7 +2,138 @@ package awscdkcloudassemblyschema
 
 
 // The set of options to control the workflow of the test runner.
+//
+// Example:
+//   // The code below shows an example of how to instantiate this type.
+//   // The values are placeholders you should change.
+//   import cloud_assembly_schema "github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema"
+//
+//   testOptions := &TestOptions{
+//   	AllowDeleteFailures: jsii.Boolean(false),
+//   	AllowDestroy: []*string{
+//   		jsii.String("allowDestroy"),
+//   	},
+//   	CdkCommandOptions: &CdkCommands{
+//   		Deploy: &DeployCommand{
+//   			Args: &DeployOptions{
+//   				All: jsii.Boolean(false),
+//   				App: jsii.String("app"),
+//   				AssetMetadata: jsii.Boolean(false),
+//   				CaBundlePath: jsii.String("caBundlePath"),
+//   				ChangeSetName: jsii.String("changeSetName"),
+//   				Ci: jsii.Boolean(false),
+//   				Color: jsii.Boolean(false),
+//   				Concurrency: jsii.Number(123),
+//   				Context: map[string]*string{
+//   					"contextKey": jsii.String("context"),
+//   				},
+//   				Debug: jsii.Boolean(false),
+//   				Ec2Creds: jsii.Boolean(false),
+//   				Exclusively: jsii.Boolean(false),
+//   				Execute: jsii.Boolean(false),
+//   				Force: jsii.Boolean(false),
+//   				IgnoreErrors: jsii.Boolean(false),
+//   				Json: jsii.Boolean(false),
+//   				Lookups: jsii.Boolean(false),
+//   				Notices: jsii.Boolean(false),
+//   				NotificationArns: []*string{
+//   					jsii.String("notificationArns"),
+//   				},
+//   				Output: jsii.String("output"),
+//   				OutputsFile: jsii.String("outputsFile"),
+//   				Parameters: map[string]*string{
+//   					"parametersKey": jsii.String("parameters"),
+//   				},
+//   				PathMetadata: jsii.Boolean(false),
+//   				Profile: jsii.String("profile"),
+//   				Proxy: jsii.String("proxy"),
+//   				RequireApproval: cloud_assembly_schema.RequireApproval_NEVER,
+//   				ReuseAssets: []*string{
+//   					jsii.String("reuseAssets"),
+//   				},
+//   				RoleArn: jsii.String("roleArn"),
+//   				Rollback: jsii.Boolean(false),
+//   				Stacks: []*string{
+//   					jsii.String("stacks"),
+//   				},
+//   				Staging: jsii.Boolean(false),
+//   				Strict: jsii.Boolean(false),
+//   				ToolkitStackName: jsii.String("toolkitStackName"),
+//   				Trace: jsii.Boolean(false),
+//   				UsePreviousParameters: jsii.Boolean(false),
+//   				Verbose: jsii.Boolean(false),
+//   				VersionReporting: jsii.Boolean(false),
+//   			},
+//   			Enabled: jsii.Boolean(false),
+//   			ExpectedMessage: jsii.String("expectedMessage"),
+//   			ExpectError: jsii.Boolean(false),
+//   		},
+//   		Destroy: &DestroyCommand{
+//   			Args: &DestroyOptions{
+//   				All: jsii.Boolean(false),
+//   				App: jsii.String("app"),
+//   				AssetMetadata: jsii.Boolean(false),
+//   				CaBundlePath: jsii.String("caBundlePath"),
+//   				Color: jsii.Boolean(false),
+//   				Context: map[string]*string{
+//   					"contextKey": jsii.String("context"),
+//   				},
+//   				Debug: jsii.Boolean(false),
+//   				Ec2Creds: jsii.Boolean(false),
+//   				Exclusively: jsii.Boolean(false),
+//   				Force: jsii.Boolean(false),
+//   				IgnoreErrors: jsii.Boolean(false),
+//   				Json: jsii.Boolean(false),
+//   				Lookups: jsii.Boolean(false),
+//   				Notices: jsii.Boolean(false),
+//   				Output: jsii.String("output"),
+//   				PathMetadata: jsii.Boolean(false),
+//   				Profile: jsii.String("profile"),
+//   				Proxy: jsii.String("proxy"),
+//   				RoleArn: jsii.String("roleArn"),
+//   				Stacks: []*string{
+//   					jsii.String("stacks"),
+//   				},
+//   				Staging: jsii.Boolean(false),
+//   				Strict: jsii.Boolean(false),
+//   				Trace: jsii.Boolean(false),
+//   				Verbose: jsii.Boolean(false),
+//   				VersionReporting: jsii.Boolean(false),
+//   			},
+//   			Enabled: jsii.Boolean(false),
+//   			ExpectedMessage: jsii.String("expectedMessage"),
+//   			ExpectError: jsii.Boolean(false),
+//   		},
+//   	},
+//   	DiffAssets: jsii.Boolean(false),
+//   	Hooks: &Hooks{
+//   		PostDeploy: []*string{
+//   			jsii.String("postDeploy"),
+//   		},
+//   		PostDestroy: []*string{
+//   			jsii.String("postDestroy"),
+//   		},
+//   		PreDeploy: []*string{
+//   			jsii.String("preDeploy"),
+//   		},
+//   		PreDestroy: []*string{
+//   			jsii.String("preDestroy"),
+//   		},
+//   	},
+//   	Regions: []*string{
+//   		jsii.String("regions"),
+//   	},
+//   	StackUpdateWorkflow: jsii.Boolean(false),
+//   }
+//
 type TestOptions struct {
+	// Whether to allow resources that fail to delete during a stack update.
+	//
+	// When false, the test will fail if CloudFormation skips deleting a resource
+	// during a stack update. When true, only a warning is printed.
+	// Default: false.
+	//
+	AllowDeleteFailures *bool `field:"optional" json:"allowDeleteFailures" yaml:"allowDeleteFailures"`
 	// List of CloudFormation resource types in this stack that can be destroyed as part of an update without failing the test.
 	//
 	// This list should only include resources that for this specific

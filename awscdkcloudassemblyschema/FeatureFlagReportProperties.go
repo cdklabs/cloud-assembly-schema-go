@@ -5,6 +5,32 @@ package awscdkcloudassemblyschema
 //
 // A feature flag report is small enough that all the properties can be inlined
 // here, and doesn't need an additional file.
+//
+// Example:
+//   // The code below shows an example of how to instantiate this type.
+//   // The values are placeholders you should change.
+//   import cloud_assembly_schema "github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema"
+//
+//   var recommendedValue interface{}
+//   var userValue interface{}
+//   var v1 interface{}
+//   var v2 interface{}
+//
+//   featureFlagReportProperties := &FeatureFlagReportProperties{
+//   	Flags: map[string]FeatureFlag{
+//   		"flagsKey": &FeatureFlag{
+//   			"explanation": jsii.String("explanation"),
+//   			"recommendedValue": recommendedValue,
+//   			"unconfiguredBehavesLike": &UnconfiguredBehavesLike{
+//   				"v1": v1,
+//   				"v2": v2,
+//   			},
+//   			"userValue": userValue,
+//   		},
+//   	},
+//   	Module: jsii.String("module"),
+//   }
+//
 type FeatureFlagReportProperties struct {
 	// Information about every feature flag supported by this library.
 	Flags *map[string]*FeatureFlag `field:"required" json:"flags" yaml:"flags"`

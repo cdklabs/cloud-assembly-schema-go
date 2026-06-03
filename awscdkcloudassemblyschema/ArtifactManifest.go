@@ -2,6 +2,76 @@ package awscdkcloudassemblyschema
 
 
 // A manifest for a single artifact within the cloud assembly.
+//
+// Example:
+//   // The code below shows an example of how to instantiate this type.
+//   // The values are placeholders you should change.
+//   import cloud_assembly_schema "github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema"
+//
+//   var assumeRoleAdditionalOptions interface{}
+//
+//   artifactManifest := &ArtifactManifest{
+//   	Type: cloud_assembly_schema.ArtifactType_NONE,
+//
+//   	// the properties below are optional
+//   	AdditionalMetadataFile: jsii.String("additionalMetadataFile"),
+//   	Dependencies: []*string{
+//   		jsii.String("dependencies"),
+//   	},
+//   	DisplayName: jsii.String("displayName"),
+//   	Environment: jsii.String("environment"),
+//   	Metadata: map[string][]MetadataEntry{
+//   		"metadataKey": []MetadataEntry{
+//   			&MetadataEntry{
+//   				"type": jsii.String("type"),
+//
+//   				// the properties below are optional
+//   				"data": jsii.String("data"),
+//   				"trace": []*string{
+//   					jsii.String("trace"),
+//   				},
+//   			},
+//   		},
+//   	},
+//   	Properties: &AwsCloudFormationStackProperties{
+//   		TemplateFile: jsii.String("templateFile"),
+//
+//   		// the properties below are optional
+//   		AssumeRoleAdditionalOptions: map[string]interface{}{
+//   			"assumeRoleAdditionalOptionsKey": assumeRoleAdditionalOptions,
+//   		},
+//   		AssumeRoleArn: jsii.String("assumeRoleArn"),
+//   		AssumeRoleExternalId: jsii.String("assumeRoleExternalId"),
+//   		BootstrapStackVersionSsmParameter: jsii.String("bootstrapStackVersionSsmParameter"),
+//   		CloudFormationExecutionRoleArn: jsii.String("cloudFormationExecutionRoleArn"),
+//   		LookupRole: &BootstrapRole{
+//   			Arn: jsii.String("arn"),
+//
+//   			// the properties below are optional
+//   			AssumeRoleAdditionalOptions: map[string]interface{}{
+//   				"assumeRoleAdditionalOptionsKey": assumeRoleAdditionalOptions,
+//   			},
+//   			AssumeRoleExternalId: jsii.String("assumeRoleExternalId"),
+//   			BootstrapStackVersionSsmParameter: jsii.String("bootstrapStackVersionSsmParameter"),
+//   			RequiresBootstrapStackVersion: jsii.Number(123),
+//   		},
+//   		NotificationArns: []*string{
+//   			jsii.String("notificationArns"),
+//   		},
+//   		Parameters: map[string]*string{
+//   			"parametersKey": jsii.String("parameters"),
+//   		},
+//   		RequiresBootstrapStackVersion: jsii.Number(123),
+//   		StackName: jsii.String("stackName"),
+//   		StackTemplateAssetObjectUrl: jsii.String("stackTemplateAssetObjectUrl"),
+//   		Tags: map[string]*string{
+//   			"tagsKey": jsii.String("tags"),
+//   		},
+//   		TerminationProtection: jsii.Boolean(false),
+//   		ValidateOnSynth: jsii.Boolean(false),
+//   	},
+//   }
+//
 type ArtifactManifest struct {
 	// The type of artifact.
 	Type ArtifactType `field:"required" json:"type" yaml:"type"`

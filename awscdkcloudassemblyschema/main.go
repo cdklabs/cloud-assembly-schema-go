@@ -317,6 +317,10 @@ func init() {
 		reflect.TypeOf((*SecurityGroupContextQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
+		"@aws-cdk/cloud-assembly-schema.SuppressedViolationJson",
+		reflect.TypeOf((*SuppressedViolationJson)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
 		"@aws-cdk/cloud-assembly-schema.Tag",
 		reflect.TypeOf((*Tag)(nil)).Elem(),
 	)

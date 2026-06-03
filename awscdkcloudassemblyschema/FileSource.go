@@ -2,6 +2,20 @@ package awscdkcloudassemblyschema
 
 
 // Describe the source of a file asset.
+//
+// Example:
+//   // The code below shows an example of how to instantiate this type.
+//   // The values are placeholders you should change.
+//   import cloud_assembly_schema "github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema"
+//
+//   fileSource := &FileSource{
+//   	Executable: []*string{
+//   		jsii.String("executable"),
+//   	},
+//   	Packaging: cloud_assembly_schema.FileAssetPackaging_FILE,
+//   	Path: jsii.String("path"),
+//   }
+//
 type FileSource struct {
 	// External command which will produce the file asset to upload.
 	// Default: - Exactly one of `executable` and `path` is required.

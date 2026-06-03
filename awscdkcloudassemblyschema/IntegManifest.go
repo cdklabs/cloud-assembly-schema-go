@@ -2,6 +2,148 @@ package awscdkcloudassemblyschema
 
 
 // Definitions for the integration testing manifest.
+//
+// Example:
+//   // The code below shows an example of how to instantiate this type.
+//   // The values are placeholders you should change.
+//   import cloud_assembly_schema "github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema"
+//
+//   integManifest := &IntegManifest{
+//   	TestCases: map[string]TestCase{
+//   		"testCasesKey": &TestCase{
+//   			"stacks": []*string{
+//   				jsii.String("stacks"),
+//   			},
+//
+//   			// the properties below are optional
+//   			"allowDeleteFailures": jsii.Boolean(false),
+//   			"allowDestroy": []*string{
+//   				jsii.String("allowDestroy"),
+//   			},
+//   			"assertionStack": jsii.String("assertionStack"),
+//   			"assertionStackName": jsii.String("assertionStackName"),
+//   			"cdkCommandOptions": &CdkCommands{
+//   				"deploy": &DeployCommand{
+//   					"args": &DeployOptions{
+//   						"all": jsii.Boolean(false),
+//   						"app": jsii.String("app"),
+//   						"assetMetadata": jsii.Boolean(false),
+//   						"caBundlePath": jsii.String("caBundlePath"),
+//   						"changeSetName": jsii.String("changeSetName"),
+//   						"ci": jsii.Boolean(false),
+//   						"color": jsii.Boolean(false),
+//   						"concurrency": jsii.Number(123),
+//   						"context": map[string]*string{
+//   							"contextKey": jsii.String("context"),
+//   						},
+//   						"debug": jsii.Boolean(false),
+//   						"ec2Creds": jsii.Boolean(false),
+//   						"exclusively": jsii.Boolean(false),
+//   						"execute": jsii.Boolean(false),
+//   						"force": jsii.Boolean(false),
+//   						"ignoreErrors": jsii.Boolean(false),
+//   						"json": jsii.Boolean(false),
+//   						"lookups": jsii.Boolean(false),
+//   						"notices": jsii.Boolean(false),
+//   						"notificationArns": []*string{
+//   							jsii.String("notificationArns"),
+//   						},
+//   						"output": jsii.String("output"),
+//   						"outputsFile": jsii.String("outputsFile"),
+//   						"parameters": map[string]*string{
+//   							"parametersKey": jsii.String("parameters"),
+//   						},
+//   						"pathMetadata": jsii.Boolean(false),
+//   						"profile": jsii.String("profile"),
+//   						"proxy": jsii.String("proxy"),
+//   						"requireApproval": cloud_assembly_schema.RequireApproval_NEVER,
+//   						"reuseAssets": []*string{
+//   							jsii.String("reuseAssets"),
+//   						},
+//   						"roleArn": jsii.String("roleArn"),
+//   						"rollback": jsii.Boolean(false),
+//   						"stacks": []*string{
+//   							jsii.String("stacks"),
+//   						},
+//   						"staging": jsii.Boolean(false),
+//   						"strict": jsii.Boolean(false),
+//   						"toolkitStackName": jsii.String("toolkitStackName"),
+//   						"trace": jsii.Boolean(false),
+//   						"usePreviousParameters": jsii.Boolean(false),
+//   						"verbose": jsii.Boolean(false),
+//   						"versionReporting": jsii.Boolean(false),
+//   					},
+//   					"enabled": jsii.Boolean(false),
+//   					"expectedMessage": jsii.String("expectedMessage"),
+//   					"expectError": jsii.Boolean(false),
+//   				},
+//   				"destroy": &DestroyCommand{
+//   					"args": &DestroyOptions{
+//   						"all": jsii.Boolean(false),
+//   						"app": jsii.String("app"),
+//   						"assetMetadata": jsii.Boolean(false),
+//   						"caBundlePath": jsii.String("caBundlePath"),
+//   						"color": jsii.Boolean(false),
+//   						"context": map[string]*string{
+//   							"contextKey": jsii.String("context"),
+//   						},
+//   						"debug": jsii.Boolean(false),
+//   						"ec2Creds": jsii.Boolean(false),
+//   						"exclusively": jsii.Boolean(false),
+//   						"force": jsii.Boolean(false),
+//   						"ignoreErrors": jsii.Boolean(false),
+//   						"json": jsii.Boolean(false),
+//   						"lookups": jsii.Boolean(false),
+//   						"notices": jsii.Boolean(false),
+//   						"output": jsii.String("output"),
+//   						"pathMetadata": jsii.Boolean(false),
+//   						"profile": jsii.String("profile"),
+//   						"proxy": jsii.String("proxy"),
+//   						"roleArn": jsii.String("roleArn"),
+//   						"stacks": []*string{
+//   							jsii.String("stacks"),
+//   						},
+//   						"staging": jsii.Boolean(false),
+//   						"strict": jsii.Boolean(false),
+//   						"trace": jsii.Boolean(false),
+//   						"verbose": jsii.Boolean(false),
+//   						"versionReporting": jsii.Boolean(false),
+//   					},
+//   					"enabled": jsii.Boolean(false),
+//   					"expectedMessage": jsii.String("expectedMessage"),
+//   					"expectError": jsii.Boolean(false),
+//   				},
+//   			},
+//   			"diffAssets": jsii.Boolean(false),
+//   			"hooks": &Hooks{
+//   				"postDeploy": []*string{
+//   					jsii.String("postDeploy"),
+//   				},
+//   				"postDestroy": []*string{
+//   					jsii.String("postDestroy"),
+//   				},
+//   				"preDeploy": []*string{
+//   					jsii.String("preDeploy"),
+//   				},
+//   				"preDestroy": []*string{
+//   					jsii.String("preDestroy"),
+//   				},
+//   			},
+//   			"regions": []*string{
+//   				jsii.String("regions"),
+//   			},
+//   			"stackUpdateWorkflow": jsii.Boolean(false),
+//   		},
+//   	},
+//   	Version: jsii.String("version"),
+//
+//   	// the properties below are optional
+//   	EnableLookups: jsii.Boolean(false),
+//   	SynthContext: map[string]*string{
+//   		"synthContextKey": jsii.String("synthContext"),
+//   	},
+//   }
+//
 type IntegManifest struct {
 	// test cases.
 	TestCases *map[string]*TestCase `field:"required" json:"testCases" yaml:"testCases"`

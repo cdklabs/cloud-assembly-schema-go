@@ -2,6 +2,27 @@ package awscdkcloudassemblyschema
 
 
 // Where to publish docker images.
+//
+// Example:
+//   // The code below shows an example of how to instantiate this type.
+//   // The values are placeholders you should change.
+//   import cloud_assembly_schema "github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema"
+//
+//   var assumeRoleAdditionalOptions interface{}
+//
+//   dockerImageDestination := &DockerImageDestination{
+//   	ImageTag: jsii.String("imageTag"),
+//   	RepositoryName: jsii.String("repositoryName"),
+//
+//   	// the properties below are optional
+//   	AssumeRoleAdditionalOptions: map[string]interface{}{
+//   		"assumeRoleAdditionalOptionsKey": assumeRoleAdditionalOptions,
+//   	},
+//   	AssumeRoleArn: jsii.String("assumeRoleArn"),
+//   	AssumeRoleExternalId: jsii.String("assumeRoleExternalId"),
+//   	Region: jsii.String("region"),
+//   }
+//
 type DockerImageDestination struct {
 	// Additional options to pass to STS when assuming the role.
 	//

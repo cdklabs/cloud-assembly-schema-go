@@ -2,6 +2,32 @@ package awscdkcloudassemblyschema
 
 
 // Query input for looking up a VPC.
+//
+// Example:
+//   // The code below shows an example of how to instantiate this type.
+//   // The values are placeholders you should change.
+//   import cloud_assembly_schema "github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema"
+//
+//   var assumeRoleAdditionalOptions interface{}
+//
+//   vpcContextQuery := &VpcContextQuery{
+//   	Account: jsii.String("account"),
+//   	Filter: map[string]*string{
+//   		"filterKey": jsii.String("filter"),
+//   	},
+//   	Region: jsii.String("region"),
+//
+//   	// the properties below are optional
+//   	AssumeRoleAdditionalOptions: map[string]interface{}{
+//   		"assumeRoleAdditionalOptionsKey": assumeRoleAdditionalOptions,
+//   	},
+//   	LookupRoleArn: jsii.String("lookupRoleArn"),
+//   	LookupRoleExternalId: jsii.String("lookupRoleExternalId"),
+//   	ReturnAsymmetricSubnets: jsii.Boolean(false),
+//   	ReturnVpnGateways: jsii.Boolean(false),
+//   	SubnetGroupNameTag: jsii.String("subnetGroupNameTag"),
+//   }
+//
 type VpcContextQuery struct {
 	// Query account.
 	Account *string `field:"required" json:"account" yaml:"account"`

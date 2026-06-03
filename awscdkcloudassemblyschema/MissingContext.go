@@ -2,6 +2,38 @@ package awscdkcloudassemblyschema
 
 
 // Represents a missing piece of context.
+//
+// Example:
+//   // The code below shows an example of how to instantiate this type.
+//   // The values are placeholders you should change.
+//   import cloud_assembly_schema "github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema"
+//
+//   var assumeRoleAdditionalOptions interface{}
+//
+//   missingContext := &MissingContext{
+//   	Key: jsii.String("key"),
+//   	Props: &AmiContextQuery{
+//   		Account: jsii.String("account"),
+//   		Filters: map[string][]*string{
+//   			"filtersKey": []*string{
+//   				jsii.String("filters"),
+//   			},
+//   		},
+//   		Region: jsii.String("region"),
+//
+//   		// the properties below are optional
+//   		AssumeRoleAdditionalOptions: map[string]interface{}{
+//   			"assumeRoleAdditionalOptionsKey": assumeRoleAdditionalOptions,
+//   		},
+//   		LookupRoleArn: jsii.String("lookupRoleArn"),
+//   		LookupRoleExternalId: jsii.String("lookupRoleExternalId"),
+//   		Owners: []interface{}{
+//   			jsii.String("owners"),
+//   		},
+//   	},
+//   	Provider: cloud_assembly_schema.ContextProvider_AMI_PROVIDER,
+//   }
+//
 type MissingContext struct {
 	// The missing context key.
 	Key *string `field:"required" json:"key" yaml:"key"`

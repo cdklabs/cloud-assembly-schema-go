@@ -2,6 +2,37 @@ package awscdkcloudassemblyschema
 
 
 // Query input for looking up a load balancer listener.
+//
+// Example:
+//   // The code below shows an example of how to instantiate this type.
+//   // The values are placeholders you should change.
+//   import "github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema"
+//
+//   var assumeRoleAdditionalOptions interface{}
+//
+//   loadBalancerListenerContextQuery := &LoadBalancerListenerContextQuery{
+//   	Account: jsii.String("account"),
+//   	LoadBalancerType: cloud_assembly_schema.LoadBalancerType_NETWORK,
+//   	Region: jsii.String("region"),
+//
+//   	// the properties below are optional
+//   	AssumeRoleAdditionalOptions: map[string]interface{}{
+//   		"assumeRoleAdditionalOptionsKey": assumeRoleAdditionalOptions,
+//   	},
+//   	ListenerArn: jsii.String("listenerArn"),
+//   	ListenerPort: jsii.Number(123),
+//   	ListenerProtocol: cloud_assembly_schema.LoadBalancerListenerProtocol_HTTP,
+//   	LoadBalancerArn: jsii.String("loadBalancerArn"),
+//   	LoadBalancerTags: []Tag{
+//   		&Tag{
+//   			Key: jsii.String("key"),
+//   			Value: jsii.String("value"),
+//   		},
+//   	},
+//   	LookupRoleArn: jsii.String("lookupRoleArn"),
+//   	LookupRoleExternalId: jsii.String("lookupRoleExternalId"),
+//   }
+//
 type LoadBalancerListenerContextQuery struct {
 	// Query account.
 	Account *string `field:"required" json:"account" yaml:"account"`

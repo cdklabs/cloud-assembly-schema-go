@@ -2,6 +2,18 @@ package awscdkcloudassemblyschema
 
 
 // Represents a cdk command i.e. `synth`, `deploy`, & `destroy`.
+//
+// Example:
+//   // The code below shows an example of how to instantiate this type.
+//   // The values are placeholders you should change.
+//   import cloud_assembly_schema "github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema"
+//
+//   cdkCommand := &CdkCommand{
+//   	Enabled: jsii.Boolean(false),
+//   	ExpectedMessage: jsii.String("expectedMessage"),
+//   	ExpectError: jsii.Boolean(false),
+//   }
+//
 type CdkCommand struct {
 	// Whether or not to run this command as part of the workflow This can be used if you only want to test some of the workflow for example enable `synth` and disable `deploy` & `destroy` in order to limit the test to synthesis.
 	// Default: true.

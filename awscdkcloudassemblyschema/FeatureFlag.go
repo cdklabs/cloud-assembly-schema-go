@@ -2,6 +2,27 @@ package awscdkcloudassemblyschema
 
 
 // A single feature flag.
+//
+// Example:
+//   // The code below shows an example of how to instantiate this type.
+//   // The values are placeholders you should change.
+//   import cloud_assembly_schema "github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema"
+//
+//   var recommendedValue interface{}
+//   var userValue interface{}
+//   var v1 interface{}
+//   var v2 interface{}
+//
+//   featureFlag := &FeatureFlag{
+//   	Explanation: jsii.String("explanation"),
+//   	RecommendedValue: recommendedValue,
+//   	UnconfiguredBehavesLike: &UnconfiguredBehavesLike{
+//   		V1: v1,
+//   		V2: v2,
+//   	},
+//   	UserValue: userValue,
+//   }
+//
 type FeatureFlag struct {
 	// Explanation about the purpose of this flag that can be shown to the user.
 	// Default: - No description.

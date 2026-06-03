@@ -2,6 +2,22 @@ package awscdkcloudassemblyschema
 
 
 // A node in the construct creation stack trace.
+//
+// Example:
+//   // The code below shows an example of how to instantiate this type.
+//   // The values are placeholders you should change.
+//   import cloud_assembly_schema "github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema"
+//
+//   cloudFormationResourceJson := &CloudFormationResourceJson{
+//   	LogicalId: jsii.String("logicalId"),
+//   	TemplatePath: jsii.String("templatePath"),
+//
+//   	// the properties below are optional
+//   	PropertyPaths: []*string{
+//   		jsii.String("propertyPaths"),
+//   	},
+//   }
+//
 type CloudFormationResourceJson struct {
 	// The logical ID of the resource in the CloudFormation template.
 	LogicalId *string `field:"required" json:"logicalId" yaml:"logicalId"`

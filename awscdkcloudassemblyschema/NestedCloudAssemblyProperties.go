@@ -2,6 +2,19 @@ package awscdkcloudassemblyschema
 
 
 // Artifact properties for nested cloud assemblies.
+//
+// Example:
+//   // The code below shows an example of how to instantiate this type.
+//   // The values are placeholders you should change.
+//   import cloud_assembly_schema "github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema"
+//
+//   nestedCloudAssemblyProperties := &NestedCloudAssemblyProperties{
+//   	DirectoryName: jsii.String("directoryName"),
+//
+//   	// the properties below are optional
+//   	DisplayName: jsii.String("displayName"),
+//   }
+//
 type NestedCloudAssemblyProperties struct {
 	// Relative path to the nested cloud assembly.
 	DirectoryName *string `field:"required" json:"directoryName" yaml:"directoryName"`

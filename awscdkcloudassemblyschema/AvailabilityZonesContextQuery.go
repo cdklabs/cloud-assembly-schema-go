@@ -2,6 +2,26 @@ package awscdkcloudassemblyschema
 
 
 // Query to availability zone context provider.
+//
+// Example:
+//   // The code below shows an example of how to instantiate this type.
+//   // The values are placeholders you should change.
+//   import cloud_assembly_schema "github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema"
+//
+//   var assumeRoleAdditionalOptions interface{}
+//
+//   availabilityZonesContextQuery := &AvailabilityZonesContextQuery{
+//   	Account: jsii.String("account"),
+//   	Region: jsii.String("region"),
+//
+//   	// the properties below are optional
+//   	AssumeRoleAdditionalOptions: map[string]interface{}{
+//   		"assumeRoleAdditionalOptionsKey": assumeRoleAdditionalOptions,
+//   	},
+//   	LookupRoleArn: jsii.String("lookupRoleArn"),
+//   	LookupRoleExternalId: jsii.String("lookupRoleExternalId"),
+//   }
+//
 type AvailabilityZonesContextQuery struct {
 	// Query account.
 	Account *string `field:"required" json:"account" yaml:"account"`
