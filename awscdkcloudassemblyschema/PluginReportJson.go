@@ -29,6 +29,10 @@ type PluginReportJson struct {
 	// Default: - no version.
 	//
 	PluginVersion *string `field:"optional" json:"pluginVersion" yaml:"pluginVersion"`
+	// Any preamble text that the plugin wants to include in the report that is not a violation itself.
+	// Default: - no preamble.
+	//
+	Preamble *string `field:"optional" json:"preamble" yaml:"preamble"`
 	// Violations that were suppressed via acknowledgement.
 	//
 	// These violations matched an acknowledged rule ID and were excluded

@@ -22,6 +22,8 @@ type CloudFormationResourceJson struct {
 	// The logical ID of the resource in the CloudFormation template.
 	LogicalId *string `field:"required" json:"logicalId" yaml:"logicalId"`
 	// The path to the CloudFormation template containing this resource.
+	//
+	// This path is relative to the Cloud Assembly root directory.
 	TemplatePath *string `field:"required" json:"templatePath" yaml:"templatePath"`
 	// Properties within the construct where the violation was detected.
 	//
